@@ -1,0 +1,77 @@
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-secondary);
+}
+.is-clicked{
+    background-color: var(--color-primary);
+}
+main{
+    margin: auto;
+    padding: 0;
+    padding-top: 0;
+}
+
+:root{
+    --color-primary: #7e7ddf;
+    --color-secondary: #302c2c;
+    --color-text: white;
+}
+
+header{
+    max-width: 100vw;
+    min-height: 10vh;
+    background-color: var(--color-primary);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    /* padding: 1vw; */
+    margin: 0;
+}
+h1{
+    /* margin: 1em; */
+    text-align: center;
+}
+#main_content{
+    padding-top: 3vh;
+    margin: auto;
+    border: 1px solid var(--color-primary);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* login link es la etiqueta <a> */
+#loginLink{
+    font-size: 20px;
+    
+    
+    background-color: var(--color-primary);
+    padding: 0.5em;
+    margin: 1.5vw;
+    color: white;
+}
+#loginView{
+    background-color: aqua;
+    display: flexbox;
+    display: none;
+}
+@media screen and (min-width:400px){
+    #loginView{
+        background-color: blue;
+        position: relative;
+        left: 40vw;
+    }
+}
+#loginView h2{
+    color: var(--color-text);
+}
+
+#loginView form input {
+    margin: 10px;
+}
+
